@@ -68,11 +68,11 @@ function productRouting(method, url, response) {
           </body>
         </html>
       `);
-    } else {
+    } /* else {
       console.log(`ERROR: requested url ${url} doesn’t exist for product.`);
-      response.writeHead(404, { 'Content-Type': 'text/plain' });
-      response.end('Product not found.');
-    }
+      response?.writeHead(404, { 'Content-Type': 'text/plain' });
+      response?.end('Product not found.');
+    } */
   }
   
   module.exports = productRouting;
